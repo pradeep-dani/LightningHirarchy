@@ -1,0 +1,25 @@
+<aura:component >
+    <aura:attribute name="node" type="Object" />
+    <aura:attribute name="nodeIndex" type="String" />
+    <aura:attribute name="thisLen" type="String" />
+    <aura:attribute name="expanded" type="Boolean" default="false" />
+    
+    
+    <li>
+        <span> 
+            <a >
+                {!v.node.Name}  
+            </a> 
+        </span>
+        <!--<aura:if isTrue="{!(v.nodeIndex + 1) == v.thisLen}">
+         &nbsp;&nbsp;<button> &nbsp;&nbsp;+&nbsp;&nbsp; </button>
+        </aura:if>-->
+        <aura:if isTrue="{!v.node.items.length > 0}">
+            <ul>
+                <aura:iteration items="{!v.node.items}" var="node" indexVar="nodeIndex">
+                    <c:p_hierarchy_comp node="{!node}" nodeIndex="{!nodeIndex}" thisLen="{!v.node.items.length}"/>
+                </aura:iteration>
+            </ul>
+        </aura:if>
+    </li>        
+</aura:component>

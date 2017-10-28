@@ -1,0 +1,105 @@
+.THIS ul.tree {
+    white-space: nowrap;  
+}
+
+.THIS ul.tree,
+.THIS ul.tree ul {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.THIS ul.tree li {
+    display: block;
+    width: auto;
+    float: left;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.THIS ul.tree ul li {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8ra19DgAE2wHx4XtXIQAAAABJRU5ErkJggg==);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+.THIS ul.tree li span {
+    display: block;
+    width: 10em;
+    height: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    white-space: normal;
+    letter-spacing: normal;
+}
+
+.THIS ul.tree ul li:last-child {
+    background-repeat: no-repeat;
+    background-size:50% 1px;
+    background-position: left top;
+}
+
+.THIS ul.tree ul li:first-child {
+    background-repeat: no-repeat;
+    background-size: 50% 1px;
+    background-position: right top;
+}
+
+.THIS ul.tree ul li:first-child:last-child {
+    background: none;
+}
+
+.THIS ul.tree ul li span {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8ra19DgAE2wHx4XtXIQAAAABJRU5ErkJggg==) no-repeat 50% top;
+    background-size: 1px 1em;
+    padding-top: 1em;
+}
+
+.THIS ul.tree ul {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8ra19DgAE2wHx4XtXIQAAAABJRU5ErkJggg==) no-repeat 50% top;
+    background-size: 1px 0.8em;
+    padding-top: 0.8em;
+}
+
+.THIS a, 
+.THIS a:visited, 
+.THIS a:active {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial,verdana,tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer; 
+    width: 50%;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.THIS a:hover {
+    background-color: lightskyblue;
+}
+
+.THIS ul.tree,
+.THIS #wrapper {
+    margin: 0 auto;
+}
+
+.THIS ul.tree {
+    width: 100%;
+}
+
+.THIS .clearer {
+    clear: both;
+}
+
+.THIS p {
+    margin-top: 2em;
+}

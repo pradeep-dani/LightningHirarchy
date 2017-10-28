@@ -1,0 +1,13 @@
+<aura:component controller="p_tree_node_apex_controller">
+    <aura:attribute name="nodes" type="Object" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <div class="pradeep_danip_hierarchy_initComp">
+        <div id="wrapper">
+            <ul class="tree">
+                <aura:iteration items="{!v.nodes}" var="node" indexVar="nodeIndex">
+                    <c:p_hierarchy_comp node="{!node}" nodeIndex="{!nodeIndex}" thisLen="{!v.nodes.length}"/>
+                </aura:iteration>
+            </ul>
+        </div> 
+    </div>	
+</aura:component>
